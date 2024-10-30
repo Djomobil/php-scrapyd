@@ -35,4 +35,6 @@ jobs:
         run: |
           curl -X POST \
             -H "Authorization: Bearer $PACKAGIST_TOKEN" \
-            https://packagist.org/api/update-package?username=josephdelassalle&package=php_scrapyd_package
+            -H "Content-Type: application/json" \
+            -d '{"repository":{"url":"https://github.com/Djomobil/php-scrapyd"}}' \
+            https://packagist.org/api/update-package?username=Djomobil&package=php-scrapyd
