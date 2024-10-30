@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<ruleset name="Project Standards">
+    <!-- Utilisation de PSR-12 comme base -->
+    <rule ref="PSR12"/>
+
+    <!-- Applique la vérification pour PHP 8.2+ -->
+    <config name="php_version" value="80200"/>
+
+    <!-- Ignorer les règles obligeant les underscores pour les variables privées -->
+    <rule ref="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore">
+        <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+    </rule>
+
+    <!-- Autoriser jusqu'à 120 caractères par ligne, plus permissif pour le code moderne -->
+    <config name="lineLength" value="120"/>
+
+    <!-- Requête d'ajout de docblock sur les classes et fonctions publiques -->
+    <rule ref="Generic.Commenting.DocComment.Missing">
+        <properties>
+            <property name="public_only" value="true"/>
+        </properties>
+    </rule>
+
+    <!-- Inclure le répertoire `src` pour l'analyse -->
+    <file>src</file>
+
+    <!-- Exclure certains types de fichiers ou dossiers si nécessaire -->
+    <exclude-pattern>vendor</exclude-pattern>
+</ruleset>
