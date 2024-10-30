@@ -5,6 +5,7 @@
     "license": "MIT",
     "keywords": ["scrapyd", "scraping", "spider", "scrapy"],
     "version": "1.0.0",
+    "homepage": "https://github.com/Djomobil/php-scrapyd",
     "autoload": {
         "psr-4": {
             "Djomobil\\PhpScrapyd\\": "src/"

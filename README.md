@@ -1,7 +1,7 @@
 # PHP Scrapyd Package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/josephdelassalle/php_scrapyd_package.svg?style=flat-square)](https://packagist.org/packages/josephdelassalle/php_scrapyd_package)
-[![Total Downloads](https://img.shields.io/packagist/dt/josephdelassalle/php_scrapyd_package.svg?style=flat-square)](https://packagist.org/packages/josephdelassalle/php_scrapyd_package)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/Djomobil/php-scrapyd.svg?style=flat-square)](https://packagist.org/packages/Djomobil/php-scrapyd)
+[![Total Downloads](https://img.shields.io/packagist/dt/Djomobil/php-scrapyd.svg?style=flat-square)](https://packagist.org/packages/Djomobil/php-scrapyd)
 
 Package de communication avec l'API Scrapyd pour gérer les spiders et les tâches de scraping.
 
@@ -10,7 +10,7 @@ Package de communication avec l'API Scrapyd pour gérer les spiders et les tâch
 Vous pouvez installer le package via Composer :
 
 ```bash
-composer require josephdelassalle/php_scrapyd_package
+composer require Djomobil/php-scrapyd
 ```
 
 ## Configuration
