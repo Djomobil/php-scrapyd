@@ -22,10 +22,12 @@ jobs:
       - name: Install dependencies
         run: composer install --no-interaction --prefer-dist --optimize-autoloader
 
-      - name: Run lint and tests
-        run: |
-          composer lint
-          composer test
+      - name: Run lint
+        run: composer lint
+          
+      
+      - name: Run tests
+        run: composer test
 
       - name: Trigger Packagist update
         env:
